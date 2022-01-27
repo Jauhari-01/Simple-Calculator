@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #dee4f1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4bb7b7a6;
+    min-height: 100vh;
+}
+.cal-grid{
+    display: grid;
+    background: #afc8e1;
+    grid-template-rows: repeat(5,100px);
+    grid-template-columns: repeat(4,100px);
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+
+.result{
+    grid-column: 1/-1;
+    background-color: #3f6bbd;
+    padding: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+    border-radius: 1rem;
+    border: 0.5vw solid white;
+}
+
+.previous-oprant{
+    opacity: 0.4;
+    color: rgb(233, 225, 211);
+    font-size: 1.0rem;
+    overflow: hidden;
+}
+.current-oprant{
+    color: rgb(233, 215, 185);
+    font-size: 1.3rem;
+}
+.temp-result{
+    position: absolute;
+    color: rgb(233, 225, 211);
+    font-size: 0.8rem;
+    opacity: 0.3;
+    overflow: hidden;
+}
+.cal-grid button{
+    background: rgb(177, 206, 245);
+    border: 0.5vw solid white;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 66%;
+    color: #3574e9;
+}
+
+.cal-grid button:hover{
+    background-color: rgb(216, 226, 240);
+}
